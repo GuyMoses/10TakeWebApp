@@ -8,7 +8,9 @@
 								<div ng-mouseenter="onImage = true" ng-mouseleave="onImage = false"  class="imageBox">
 									<img class="itemImage" ng-src="{{item.image}}" src="">
 									<div ng-show="onImage" class="over2 imageBtn">
-										<button class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span></button>
+										<button ng-click="home.borrowClicked(item.id)" class="btn btn-default">
+											<span class="glyphicon glyphicon-hand-right bGly"></span>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -36,7 +38,14 @@
 					<li ng-repeat="item in home.items" ng-show="$index % 4 == 1">
 						<div class="card">
 							<div class="image" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
-								<img class="itemImage" ng-src="{{item.image}}" src="">
+								<div ng-mouseenter="onImage = true" ng-mouseleave="onImage = false"  class="imageBox">
+									<img class="itemImage" ng-src="{{item.image}}" src="">
+									<div ng-show="onImage" class="over2 imageBtn">
+										<button ng-click="home.borrowClicked(item.id)" class="btn btn-default">
+											<span class="glyphicon glyphicon-hand-right bGly"></span>
+										</button>
+									</div>
+								</div>
 							</div>
 							<div class="details">
 								<div class="itemDetails">
@@ -62,7 +71,14 @@
 					<li ng-repeat="item in home.items" ng-show="$index % 4 == 2">
 						<div class="card">
 							<div class="image" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
-								<img class="itemImage" ng-src="{{item.image}}" src="">
+								<div ng-mouseenter="onImage = true" ng-mouseleave="onImage = false"  class="imageBox">
+									<img class="itemImage" ng-src="{{item.image}}" src="">
+									<div ng-show="onImage" class="over2 imageBtn">
+										<button ng-click="home.borrowClicked(item.id)" class="btn btn-default">
+											<span class="glyphicon glyphicon-hand-right bGly"></span>
+										</button>
+									</div>
+								</div>
 							</div>
 							<div class="details">
 								<div class="itemDetails">
@@ -87,7 +103,14 @@
 					<li ng-repeat="item in home.items" ng-show="$index % 4 == 3">
 						<div class="card">
 							<div class="image" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
-								<img class="itemImage" ng-src="{{item.image}}" src="">
+								<div ng-mouseenter="onImage = true" ng-mouseleave="onImage = false"  class="imageBox">
+									<img class="itemImage" ng-src="{{item.image}}" src="">
+									<div ng-show="onImage" class="over2 imageBtn">
+										<button ng-click="home.borrowClicked(item.id)" class="btn btn-default">
+											<span class="glyphicon glyphicon-hand-right bGly"></span>
+										</button>
+									</div>
+								</div>
 							</div>
 							<div class="details">
 								<div class="itemDetails">
