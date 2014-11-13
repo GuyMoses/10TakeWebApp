@@ -3,9 +3,14 @@
 			<li class="columns cola">
 				<ul class="col1">
 					<li ng-repeat="item in home.items" ng-show="$index % 4 == 0">
-						<div class="card" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
-							<div class="image">
-								<img class="itemImage" ng-src="{{item.image}}" src="">
+						<div class="card">
+							<div class="image" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
+								<div ng-mouseenter="onImage = true" ng-mouseleave="onImage = false"  class="imageBox">
+									<img class="itemImage" ng-src="{{item.image}}" src="">
+									<div ng-show="onImage" class="over2 imageBtn">
+										<button class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span></button>
+									</div>
+								</div>
 							</div>
 							<div class="details">
 								<div class="itemDetails">
@@ -29,8 +34,8 @@
 			<li class="columns">
 				<ul class="col2">
 					<li ng-repeat="item in home.items" ng-show="$index % 4 == 1">
-						<div class="card" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
-							<div class="image">
+						<div class="card">
+							<div class="image" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
 								<img class="itemImage" ng-src="{{item.image}}" src="">
 							</div>
 							<div class="details">
@@ -55,8 +60,8 @@
 			<li class="columns">
 				<ul class="col3">
 					<li ng-repeat="item in home.items" ng-show="$index % 4 == 2">
-						<div class="card" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
-							<div class="image">
+						<div class="card">
+							<div class="image" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
 								<img class="itemImage" ng-src="{{item.image}}" src="">
 							</div>
 							<div class="details">
@@ -80,8 +85,8 @@
 			<li class="columns">
 				<ul class="col4">
 					<li ng-repeat="item in home.items" ng-show="$index % 4 == 3">
-						<div class="card" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
-							<div class="image">
+						<div class="card">
+							<div class="image" ng-class="{hightlightc: hightlightCard}"  ng-mouseenter="hightlightCard = true" ng-mouseleave="hightlightCard  = false">
 								<img class="itemImage" ng-src="{{item.image}}" src="">
 							</div>
 							<div class="details">
