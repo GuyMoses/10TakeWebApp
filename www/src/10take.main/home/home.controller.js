@@ -2,12 +2,13 @@
 
 	function HomeCtrl(log, stateParams, auth, items) {
 		var _this = this;
-		// log.debug('state params', stateParams);
-		// log.debug('auth', auth);
-		//this.name = stateParams.name;
-		this.items = items.all;
 		this.user = auth.user.name;
 		this.user = "Guy Moses";
+		items.all()
+			.success(function(data) {
+				log.debug(data);
+				_this.items = data.items;
+			})
 
 		_this.borrowClicked = function(arg1){
 			alert("Borrowed Item " + arg1);

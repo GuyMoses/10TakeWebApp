@@ -1,23 +1,14 @@
 (function() {
 
 	function ItemCtrl(log, stateParams, auth, stateParams,items) {
+		var _this = this;
 		this.id = stateParams.itemId;
 		log.debug(items);
-		this.all = items.all;
-
-		var doc = items.all;
-
-		var result = getById(doc, 1);
-
-		this.oneItem = result;
-
-		function getById(arr, id) {
-		    for (var d = 0, len = arr.length; d < len; d += 1) {
-		        if (arr[d].id === id) {
-		            return arr[d];
-		        }
-		    }
-		}
+		items.find(stateParams.itemId)
+			.success(function(data) {
+				log.debug(data);
+				_this.oneItem = data.item;
+			})
 	}
 
 		ItemCtrl.$inject = ['$log', '$stateParams', '$auth','$stateParams','ItemsService'];
