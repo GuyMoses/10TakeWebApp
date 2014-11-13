@@ -21,6 +21,7 @@
 		'10take.home',
 		'10take.auth',
 		'10take.user',
+		'10take.item',
 		'10take.services'
 		])
 		.run(Run)
