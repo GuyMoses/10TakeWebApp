@@ -1,0 +1,30 @@
+.itemContainer{
+	margin-left: 30%;
+	margin-top: 5%;
+}
+
+.iImage{
+	max-width: 600px;
+	border-radius:20px;
+}
+
+.liist{
+	display:inline-block;
+}
+
+.secondLi{
+	position:absolute;
+	margin-top: 7%;
+	margin-left: 2%;
+}
+
+.iUserBox{
+	background-color:#fff;
+	border-radius: 10%;
+	padding:10%;
+	width:130%;
+}
+
+.iUserImage{
+	max-width: 100px;
+}
