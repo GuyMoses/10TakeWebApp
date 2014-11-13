@@ -22,9 +22,6 @@
 		  			<button ng-click="showNotification = ! showNotification" class="btn btn-default">
 		  				<span class="glyphicon glyphicon-fire"></span>	
 		  			</button>
-		  			<button class="btn btn-default">
-		  				{{app.user.email}}
-		  			</button>
 		  			<div ng-show="showNotification" class="notificationBoard">
 		  				<div class="arrow">
 		  					<img src="https://dev.vaadin.com/svn/branches/TouchKit2/vaadin-touchkit-agpl/src/main/java/com/vaadin/addon/touchkit/gwt/client/theme/img/navbar-arrow-up.png">
@@ -44,6 +41,9 @@
 		  					</div>
 		  				</div>
 		  			</div>
+		  			<button class="btn btn-default">
+		  				{{app.user.email}}
+		  			</button>
 		  		</div>
 		  	</li>
 	    </ul>

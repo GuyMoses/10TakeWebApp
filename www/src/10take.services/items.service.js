@@ -8,7 +8,7 @@
 				image: "http://media-cache-ec0.pinimg.com/736x/a8/78/5e/a8785ecfafe1a6bc2c1b62e581ffb258.jpg",
 				user:
 				{
-					id: 125,
+					id: 1,
 					name: "Guy Moses",
 					image: "http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg"
 				}
@@ -32,7 +32,7 @@
 				image: "http://site.englishtealeaves.com/blog/images/british-flag-tea-pot-large.jpg",
 				user:
 				{
-					id: 125,
+					id: 1,
 					name: "Guy Moses",
 					image: "http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg"
 				}
@@ -56,7 +56,7 @@
 				image: "http://www.shredbetties.com/images/uploads/boardtest/burton_troop.jpg",
 				user:
 				{
-					id: 125,
+					id: 1,
 					name: "Guy Moses",
 					image: "http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg"
 				}

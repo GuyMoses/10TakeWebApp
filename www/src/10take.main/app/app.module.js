@@ -30,5 +30,6 @@
 	angular.module('10take.app', [])
 		.config(Config)
 		.run(Run)
+		.constant('URL', 'http://172.20.19.249:3000')
 
 }());

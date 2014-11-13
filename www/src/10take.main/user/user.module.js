@@ -21,7 +21,7 @@
 				});
 
 		// home page
-		urlRouterProvider.otherwise('/app/user/');
+		urlRouterProvider.otherwise('/app/user');
 	}
 		Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 

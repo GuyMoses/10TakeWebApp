@@ -17,7 +17,7 @@
 		urlRouterProvider.otherwise('/auth/signIn');
 
 		authProvider.configure({
-			apiUrl:  'http://localhost:3000',
+			apiUrl:  'http://172.20.19.249:3000',
 			storage: 'cookies',
 			confirmationSuccessUrl: window.location.origin + '/www/index.html#/home'
 		});
