@@ -8,6 +8,10 @@
 		this.deleteBorrow = function(item_id){
 			return http.delete(URL+"/borrows/"+item_id)
 		}
+
+		this.all = function(){
+			return http.get(URL + '/borrows')
+		}
 	}
 
 	Borrow.$inject = ['$http', 'URL', '$log'];

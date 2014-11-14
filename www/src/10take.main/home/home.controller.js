@@ -11,6 +11,15 @@
 				_this.items = data.items;
 			})
 
+		/*
+		borrow.all()
+			.success(function(data) {
+				log.debug(data);
+				_this.userBorrows = data.borrows;
+			})*/
+
+
+
 		_this.borrowClicked = function(arg1){
 			borrow.newBorrow(arg1)
 				.success(function(data){
